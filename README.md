@@ -4,15 +4,15 @@
 
 # The prototype files and the prototype pom.xml
 
-`mvn archetype:generate \
--DarchetypeCatalog=local \
--DarchetypeGroupId=com.wmb.maven.archetypes \
--DarchetypeArtifactId=wmb-springboot-archetype \
--DarchetypeVersion=1.0.0 \
--DgroupId=com.example \
+`mvn archetype:generate \<br/>
+-DarchetypeCatalog=local \<br/>
+-DarchetypeGroupId=com.wmb.maven.archetypes \<br/>
+-DarchetypeArtifactId=wmb-springboot-archetype \<br/>
+-DarchetypeVersion=1.0.0 \<br/>
+-DgroupId=com.example \<br/>
 -DartifactId=example-app`
 
-Credit links
-https://maven.apache.org/guides/mini/guide-creating-archetypes.html
-http://maven.apache.org/archetype/maven-archetype-plugin/index.html
-https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet
+Credit links<br/>
+https://maven.apache.org/guides/mini/guide-creating-archetypes.html<br/>
+http://maven.apache.org/archetype/maven-archetype-plugin/index.html<br/>
+https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet<br/>

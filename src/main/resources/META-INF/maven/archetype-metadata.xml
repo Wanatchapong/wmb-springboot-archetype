@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" 
+  name="basic">
+
+  <requiredProperties>
+    <requiredProperty key="main-class-name">
+      <defaultValue>App</defaultValue>
+    </requiredProperty>
+
+    <requiredProperty key="test-class-name">
+      <defaultValue>AppTest</defaultValue>
+    </requiredProperty>
+
+    <!-- dependencies version -->
+    <requiredProperty key="spring-boot-starter-parent-version">
+      <defaultValue>1.5.9.RELEASE</defaultValue>
+    </requiredProperty>
+
+    <requiredProperty key="swagger-version">
+      <defaultValue>2.6.0</defaultValue>
+    </requiredProperty>
+
+    <requiredProperty key="kotlin-version">
+      <defaultValue>1.1.61</defaultValue>
+    </requiredProperty>
+
+  </requiredProperties>
+
+  <fileSets>
+    <!-- Set filtered="true" 
+      "true" the selected files will be used as Velocity templates
+      "false" the selected files will be copied without modification
+    -->
+    <!-- Set packaged="false"
+      "true" the selected files will be generated/copied in a directory structure that is prepended by the package property
+      "false" the selected files will be generated/copied without that prepend
+    -->
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/main/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/test/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+    </fileSet>
+
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/test/resources</directory>
+    </fileSet>
+
+  </fileSets>
+
+</archetype-descriptor>

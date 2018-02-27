@@ -4,13 +4,15 @@
 
 # The prototype files and the prototype pom.xml
 
-`mvn archetype:generate \<br/>
--DarchetypeCatalog=local \<br/>
--DarchetypeGroupId=com.wmb.maven.archetypes \<br/>
--DarchetypeArtifactId=wmb-springboot-archetype \<br/>
--DarchetypeVersion=1.0.0 \<br/>
--DgroupId=com.example \<br/>
--DartifactId=example-app`
+```
+mvn archetype:generate \
+-DarchetypeCatalog=local \
+-DarchetypeGroupId=com.wmb.maven.archetypes \
+-DarchetypeArtifactId=wmb-springboot-archetype \
+-DarchetypeVersion=1.0.0 \
+-DgroupId=com.example \
+-DartifactId=example-app
+```
 
 Credit links<br/>
 https://maven.apache.org/guides/mini/guide-creating-archetypes.html<br/>
